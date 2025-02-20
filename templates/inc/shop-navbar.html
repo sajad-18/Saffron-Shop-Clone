@@ -1,0 +1,33 @@
+<nav id="navbar">
+    <ul>
+        <li><a href="{% url 'shop:shop' %}" class="first active">صفحه اصلی</a></li>
+        <li class="dropdown"><a href="{% url 'shop:products' %}" class="dropbtn">محصولات</a>
+            <div class="dropdown-content">
+                <a href="">پک هدیه</a>
+                <a href="">زعفران</a>
+                <a href="">پودر زعفران</a>
+                <a href="">هل</a>
+                <a href="">اسپری زعفران</a>
+                <a href="">شربت زعفرانی</a>
+                <a href="">کافی میکس و ماسالای زعفرانی</a>
+                <a href="">چای و دمنوش</a>
+                <a href="">نبات و آبنبات</a>
+                <a href="">ادویه</a>
+                <a href="">زرشک</a>
+                <a href="">خشکبار</a>
+                <a href="">سایر محصولات</a>
+                <a href="">سبزیجات</a>
+            </div>
+        </li>
+        <li><a href="" id="cart-menu" class="">سبد خرید : <span id="cart-2" class="pe">0</span></a></li>
+        {% if request.user.is_authenticated %}
+            <li><a href="{% url 'accounts:logout' %}" class="">خروج</a></li>
+        {% else %}
+            <li><a href="{% url 'accounts:register' %}" class="">ثبت نام</a></li>
+            <li><a href="{% url 'accounts:login' %}" class="">ورود</a></li>
+        {% endif %}
+        <li><a href="">قوانین و مقررات</a></li>
+        <li><a href="">راهنمای خرید</a></li>
+        <li><a href="{% url 'home:home' %}" target="_blank">وب سایت شرکت</a></li>
+    </ul>
+</nav>

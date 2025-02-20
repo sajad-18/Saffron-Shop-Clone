@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'shop/images/shop/favicon-shop.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'shop/images/shop/favicon-shop.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/shopBase-style.css' %}">
+    {% block link %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <title></title>
+</head>
+<body>
+    {% include 'inc/messages.html' %}
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
+    <header class="container">
+        <div class="top">
+            <div id="top-bahraman-logo">
+                <a href="">
+                    <img src="{% static 'shop/images/shop/top-bahraman-logo.jpg' %}" alt="">
+                </a>
+            </div>
+            <div id="top-bahraman-phone">
+                <div class="phone-icon">
+                    <img src="{% static 'shop/images/shop/phone-icon.png' %}" alt="">
+                </div>
+                <div class="phone-number">
+                    <p>۰۵۱-۳۵۴۱۴۴۸۷</p>
+                </div>
+            </div>
+        </div>
+        {% include 'inc/shop-navbar.html' %}
+        <div class="slides">
+            <img src="{% static 'shop/images/shop/slider1.jpg_1705441218' %}" alt="">
+            <div class="takhfif">۳ درصد اعتبار خرید</div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="left">
+            <img src="{% static 'shop/images/shop/footer.png' %}" alt="">
+        </div>
+        <div class="center">
+            <img src="{% static 'shop/images/shop/footer_bg.jpg' %}" alt="">
+        </div>
+        <div class="right">
+            <p>© 2024 by Bahraman Saffron</p>
+
+            <p>تمامی حقوق برای زعفران بهرامن محفوظ است</p>
+        </div>
+    </footer>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        function closenModal() {
+            document.getElementById("alert").style.display = "none";
+        }
+    </script>
+</body>
+</html>

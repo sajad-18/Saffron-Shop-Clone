@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'home/images/home/favicon (2).png' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <title>زعفران بهرامن</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
+    <div class="nav">
+        <div class="nav nav-logo"><img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}"></div>
+        <div class="nav nav-content">
+            <ul class="menu">
+                <li class="menu item"><a href="{% url 'home:home' %}">خانه</a></li>
+                <li class="menu line">|</li>
+                <li class="menu item"><a href="{% url 'home:about_us' %}">درباره ما</a></li>
+                <li class="menu line">|</li>
+                <li class="dropdown">
+                    <a href="{% url 'shop:products' %}" class="dropbtn">محصولات</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a  target=""  href="">زعفران</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">شیرینی جات</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">چاشنی غذا</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">نوشیدنی</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">خشکبار</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">پک هدیه</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">سبزی جات</a>
+                        </li>
+                    
+                        <li>
+                            <a  target=""  href="">پودریجات</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu line">|</li>
+                <li class="menu item"><a href="{% url 'shop:shop' %}">فروشگاه</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div>
+            <div class="swiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="{% static 'home/images/home/ax04.jpg' %}">
+                <div class="hed-slide-text">
+                    <p class="hed-slide-text-hed">بهرامن، حال خوب من</p>
+                    <p class="hed-slide-text-dis">حال خوب سرزمینم...</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home/images/home/SLID2.jpg' %}">
+                <div class="hed-slide-text">
+                    <p class="hed-slide-text-hed">ریشه در تاریخ...</p>
+                    <p class="hed-slide-text-dis">بیش از نیم قرن در کنارهم</p>
+                    <a href="{% url 'home:about_us' %}" class="btn-learnmore">بیشتر بخوانید</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+            <div id="hed-saf-pic">
+            <img src="{% static 'home/images/home/header-flower.png' %}">
+        </div>
+        </div>
+
+    </div>
+
+    <section class="sec-about">
+        <div>
+            <h6 class="about-small">
+                <li></li>
+                بهرامن؛حال خوب من
+                <li></li>
+            </h6>
+        </div>
+        <div>
+            <h1 class="about-h1">درباره بهرامن</h1>
+        </div>
+        <div class="about-p-div">
+            <p>شرکت زعفران بهرامن در سال 1349 با نام عباس عباس زاده با هدف نوآوری در زمینه تولید و بسته بندی زعفران شروع به کار نمود و با گذشت زمان و پیشرفت جامعه و تکنولوژی در سال 1373 به زعفران بهرامن تغییر نام یافت. بهرامن از دیرباز میکوشد تا با بهره گیری از دانش روز و تجارب بزرگانِ خود، همواره برترین محصولات را به مردمان جهان عرضه نماید. محصولاتی که کیفیت، تخصص، و مهر، ریشه ی مشترک تمامیِ آن هاست، در خاکی که حمایت مشتریان که سرمایه ی اصلی بهرامن است می‌روید</p>
+        </div><br>
+        <div class="div-btn-learnmore2">
+            <a href="{% url 'home:about_us' %}" class="btn-learnmore2">بیشتر بخوانید</a>
+        </div>
+
+    </section>
+    <section class="sec-timeline">
+        <div class="container2">
+            <div class="container2-1">
+                <p class="timeline-hed">تاریخچه بهرامن</p>
+                <div class="years">
+                    <div class="row">
+                        <div class="_year active" data-title="1340 آغاز سفر" data-description="شروع سفر نوجوانی 14 ساله به نام عباس عباس زاده از روستای چرمه (در خراسان جنوبی) به مشهد مقدس" data-image="/fa/media/uploads/2022/02/01/078676786.large.jpg">
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/01.large.png' %}">
+                            </div>
+                            <div class="_line"></div>
+                        </div>
+                        <div class="_year" data-title="1348 تصمیم بزرگ" data-description="پس از 8 سال شاگردی و کسب تجربه، زمان تصمیم بزرگ و غوطه ور شدن در دنیای کارآفرینی برای خلق آینده‌ای روشن" data-image=/fa/media/uploads/2020/08/02/02.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/02.large.png' %}"/>
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year" data-title="1349 نوآوری در بسته بندی" data-description="ورود به شغل و پیشه اجدادی به سبک جدید؛ ورود به دنیای اصیل زعفران با ابتکار جدید در بسته‌بندی (خلق بسته بندی نیم گرم)" data-image=/fa/media/uploads/2020/08/02/03.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/03.large.png' %}"/>
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1350 تاسیس اولین فروشگاه اختصاصی زعفران" data-description="دریافت مجوز فروشگاه اختصاصی و مستقل زعفران از اتحادیه عطاری مشهد در سرای محمدیه با عنوان زعفران متبرک خراسان عباس عباس زاده" data-image=/fa/media/uploads/2020/08/02/04.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/04.large.png' %}" />
+                            </div>
+                            
+                                
+                                <div class="_hcircle1"></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="row rev">
+                        <div class="_year " data-title="1363 دفتر مرکزی" data-description="انتقال دفتر مرکزی فروش به پاساژ صفویه مشهد در مسیر توسعه و گسترش کسب و کار" data-image=/fa/media/uploads/2022/02/01/07_uV7D1qy.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/shopp.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1373 برند بهرامن" data-description="ثبت برند بهرامن در مسیر برندسازی در بازارهای داخلی و خارجی، و تولید محصولات جدید بر پایه زعفران" data-image=/fa/media/uploads/2022/02/01/10.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/05.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1374 افتتاح شعبه" data-description="افتتاح اولین شعبه فروشگاه بهرامن؛ نبش خیابان امام رضا (ع) 8  جهت دسترسی آسان به انواع محصولات بهرامن" data-image=/fa/media/uploads/2022/02/01/07_HYvYJFN.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/09.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1377 نشان استاندارد" data-description="راه اندازی آزمایشگاه تخصصی زعفران و افتخار دریافت نشان استاندارد ایران" data-image=/fa/media/uploads/2022/02/01/09.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/07.large.png' %}" />
+                            </div>
+                            
+                                
+                                <div class="_hcircle2"></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="_year " data-title="1380 خط تولید صنعتی" data-description="احداث ساختمانی در شش طبقه با زیربنا 1300 مترمربع با تجمیع آزمایشگاه، خط تولید و انبار در ساختمان مرکزی زعفران بهرامن" data-image=/fa/media/uploads/2022/02/01/Untitled-1-8.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/09.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1387 اولین کارخانه" data-description="افتتاح اولین کارخانه صنعتی زعفران بهرامن در شهرک صنعتی توس با بهره گیری از نیروهای متخصص و با انگیزه و ایجاد آزمایشگاه اگرودیته تخصصی زعفران" data-image=/fa/media/uploads/2022/02/01/IMG_3363.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/06.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1396 دومین کارخانه" data-description="افتتاح دومین کارخانه صنعتی برند بهرامن با بهره گیری از بروز ترین دستگاه ها برای تولید و بسته بندی انواع ادویه جات بهرامن در شهرک صنعتی توس" data-image=/fa/media/uploads/2022/02/01/1000.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/07_LpEZ8KD.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1398 راه اندازی فروشگاه آنلاین" data-description="راه اندازی فروشگاه اینترنتی برای دسترسی و سهولت در خرید، و ایجاد بستری مناسب جهت خدمات رسانی به مشتریان" data-image=/fa/media/uploads/2022/02/01/10_MVe6t1J.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/10.large.png' %}" />
+                            </div>
+                            
+                                
+                                <div class="_hcircle1"></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="row rev">
+                        <div class="_year " data-title="1399 سومین کارخانه و انبار بورس زعفران" data-description="افتتاح سومین کارخانه بهرامن در جهت خدمات رسانی بهتر باتوجه به توسعه بازار و افتتاح انبار بورس زعفران در جهت تکمیل زنجیره تولید." data-image=/fa/media/uploads/2022/02/01/timeline-1.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/07_c3QGfeY.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1400، 51 سال افتخار /   سال 1400 و بیش از نیم قرن تجربه" data-description="به چه چیزی جز نیم قرن اعتماد و همراهی شما خوبان افتخار کنیم؟
+تمام دستاورد این مسیر طولانی؛ کسب عناوین مختلف، واحد نمونه استاندارد، واحد نمونه صنایع غذایی، صادرکننده نمونه، رعایت کننده حقوق مصرف کنندگان، کسب عنوان واحد الف از سازمان نظام پزشکی، کارآفرین برتر، چندین دوره عنوان برند محبوب زعفران ایرانی حاصل همراهی مصرف کنندگان گرامی بوده است، و صمیمانه قدردان و سپاسگزاریم." data-image=/fa/media/uploads/2022/02/01/11.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/11.large.png' %}"/>
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="1401 محصولات جدید در قرن جدید" data-description="در قرن جدید با بیش از  18 گروه محصول، 222 نوع تنوع بسته بندی و با رعایت 3 اصل کلیدی کیفیت محصول، کیفیت بسته بندی و کیفیت خدمات به مشتریان در کنار شما هستیم." data-image=/fa/media/uploads/2022/02/01/herbal-infusion-4.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/Layer-1.large.png' %}" />
+                            </div>
+                            
+                                <div class="_line"></div>
+                            
+                        </div>
+                    
+                        <div class="_year " data-title="به سوی بینهایت.." data-description="همت تمامی کارکنان تلاشگر این واحد همراه با مدیریت علاقه مند و خدمتگزار موجب شد با وجود حضور صنایع صاحب نام و با سابقه بتواند سهم مناسبی از بازار فروش را به خود اختصاص دهد و در سال های 1377، 1378مفتخر به کسب نشان استانداردو مهر استاندارد از اداره استاندارد ایران گردید  و  زعفران بهرامن توانست در سال 1378  در نمایشگاه های داخلی و کشورهای حوزه خلیج فارس حضوری پررنگ و تاثیر گذار داشته باشد. در سال 1379 موفق به کسب گواهی نامه های بین المللی      
+. برای نام تجاری زعفران بهرامن گردید. HACCP و ISO9002" data-image=/fa/media/uploads/2022/02/01/11-2.large.jpg>
+                            <div class="_number">
+                                <img src="{% static 'home/images/home/12.large.png' %}" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="container2-2">
+                <div class="_bg">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="sec-products">
+        <div class="sec-title">
+            <h1>از درون ریشه ها</h1>
+        </div>
+        <br>
+        <div class="container3">
+            <div class="carts">
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/HAVAPAK.medium.png' %}" alt="">
+                            </div>
+                            <div class="title">
+                                <p>تنفس در هوای خوب</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/AAB.medium.png' %}" alt="">
+                            </div>
+                            <div class="title">
+                                <p>آب، سرمایه ی ماست</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/AZMAYESH.medium.png' %}" alt="">
+                            </div>
+                            <div class="title">
+                                <p>برای کیفیتی برتر</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/BAZYAFT.medium.png' %}" alt="">
+                            </div>
+                            <div class="title">
+                                <p>از زمین به زمین</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/KESHAVARZ.medium.png' %}" alt="">
+                            </div>
+                            <div class="title">
+                                <p>در کنار مردمان خوبمان</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <div class="feature">
+                            <div class="icon">
+                                <img src="{% static 'home/images/home/SALAMTI.medium.png' %}">
+                            </div>
+                            <div class="title">
+                                <p>حال خوب برای سلامتی</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="products-head">
+                <h1>محصولات</h1>
+            </div>
+            <div class="products">
+                <div class="background">
+                    <img src="{% static 'home/images/home/products-curve.svg' %}" alt="gerd">
+                    <div class="product-back">
+                        <img src="{% static 'home/images/home/products2.jpg' %}" alt="products">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="sec-govahi">
+        <h1>گواهینامه ها</h1>
+        <div class="container4">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide"><img src="{% static 'home/images/home/q12.medium.jpg' %}" alt=""></div>
+                  <div class="swiper-slide"><img src="{% static 'home/images/home/q14.medium.jpg' %}" alt=""></div>
+                  <div class="swiper-slide"><img src="{% static 'home/images/home/q15.medium.jpg' %}" alt=""></div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="_bg">
+            <img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}" alt="" class="_logo">
+            <img src="{% static 'home/images/home/farm.jpg' %}" alt="" class="_image">
+        </div>
+        <div class="footer-detail">
+            <div class="row">
+                <div class="con">
+                    <div class="_contact">
+                        <h1 class="_label">ارتباط با ما</h1>
+                        <div class="_content">
+                            <b>آدرس:</b> ایران - خراسان رضوی - مشهد - خیابان امام رضا(ع) - نبش امام رضا 8 <br>
+                            <b>تلفن:</b> 38541568-051  و  35413621-051 &nbsp; 
+                            <b>فکس:</b> 35413124-051
+                        </div>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="_social">
+                        <h5 class="_label">دنبال کنید</h5>
+                        <div class="_content">
+                            <img src="{% static 'home/images/home/social.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0480897016664!2d51.34124725233409!3d35.69931290219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1739609876323!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <span class="_text">
+            © All rights reserved for <a href="http://bahraman.com" style="color: #d70000;">Bahraman</a> 2024
+        </span>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{% static 'home/js/javascript.js' %}"></script>
+</body>
+</html>

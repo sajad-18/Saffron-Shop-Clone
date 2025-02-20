@@ -1,0 +1,128 @@
+{% extends 'shop-base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'shop/css/products-style.css' %}">{% endblock %}
+{% block title %}فروشگاه مرکزی زعفران بهرامن{% endblock %}
+{% block content %}
+    <div class="container2">
+        <div class="head">
+            <br>
+            <h1>محصولات بهرامن</h1>
+            <div class="line line-right"></div>
+        </div>
+        <br>
+        <div class="pr-filter">
+            <div>
+                    مرتب سازی بر اساس:
+                <input type="radio" name="sort" value="default" id="sort_default" checked> <label for="sort_default">تنظیمات پیش فرض</label> &nbsp;
+                <input type="radio" name="sort" value="min_price" id="sort_min_price"> <label for="sort_min_price">کمترین قیمت</label> &nbsp;
+                <input type="radio" name="sort" value="max_price" id="sort_max_price"> <label for="sort_max_price">بیشترین قیمت</label> &nbsp;
+                <input type="radio" name="sort" value="newer" id="sort_newer"> <label for="sort_newer">جدیدترین ها</label> &nbsp;
+                <input type="radio" name="sort" value="sales" id="sort_sales"> <label for="sort_sales">پر فروشترین ها</label> &nbsp;
+            </div>
+        </div>
+        <br>
+        <div class="pro-fil">
+            <div class="filter">
+            <div class="heading">
+                <p>خرید محصولات زعفران بهرامن</p>
+            </div>
+            <br>
+            <div class="filtering">
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="1" id="cat1"> <label class="chk-container" for="cat1">پک هدیه</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="4" id="cat2"> <label class="chk-container" for="cat2">زعفران</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="19" id="cat3"> <label class="chk-container" for="cat3">پودر زعفران</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="3" id="cat4"> <label class="chk-container" for="cat4">هل</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="14" id="cat5"> <label class="chk-container" for="cat5">اسپری زعفران</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="18" id="cat6"> <label class="chk-container" for="cat6">شربت زعفرانی</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="21" id="cat7"> <label class="chk-container" for="cat7">کافی میکس و ماسالای زعفرانی</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="7" id="cat8"> <label class="chk-container" for="cat8">چای و دمنوش</label></div>
+                <div style="position:relative"><input type="checkbox" name="cat" class="filter-chk filter-cat-chk" value="10" id="cat9"> <label class="chk-container" for="cat9">نبات و آبنبات</label></div>
+            </div>
+        </div>
+            <div class="products">
+                <div class="cart box">
+                    <a href="1/">
+                        <img src="{% static 'shop/images/shop/14-cover-چکامه.jpg_1705520292' %}" alt="پک هدیه">
+                        <p>پک هدیه چکامه</p>
+                    </a>
+                    <p class="pr"> 34,436,000 ریال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/19-cover-19-cover-50-گرم-رویال.jpg_1705520292' %}">
+                        <p>هل سبز 50 گرمی کتابی</p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/174-cover-یک-مثقال-پاکت.jpg_1705520292' %}">
+                        <p>زعفران یک مثقال پاکتی بهرامن</p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/73-cover-کاور.jpg_1705520292' %}">
+                        <p>دمنوش جینسینگ</p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/94-cover-زرشک300گرم.jpg_1705520292' %}">
+                        <p>زرشک پفکی 300 گرم </p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/83-cover-عناب-رویال.jpg_1705520292' %}">
+                        <p>عناب</p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+                <div class="cart box">
+                    <a href="">
+                        <img src="{% static 'shop/images/shop/91-cover-چوب-دارچین.jpg_1705520292' %}">
+                        <p>چوب دارچین</p>
+                    </a>
+                    <p class="pr">445,000 ريال</p>
+                    <a href="" class="add-btn">
+                        <p>افزودن به سبد خرید</p>
+                        <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jump-cart">
+        <a href="">
+            <p>رفتن به سبد خرید</p>
+        </a>
+    </div>
+{% endblock %}

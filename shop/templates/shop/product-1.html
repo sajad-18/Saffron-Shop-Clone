@@ -1,0 +1,179 @@
+{% extends 'shop-base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'shop/css/product-1.css' %}">{% endblock %}
+{% block title %}پک هدیه چکامه{% endblock %}
+{% block content %}
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
+    <div class="images-show">
+        <div class="cover-image">
+            <img src="{% static 'shop/images/shop/product/14-cover-چکامه.jpg' %}" alt="">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-30-4e642a1f9b.jpg' %}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-28-eeb5fcaa98.jpg' %}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-26-dadd3d80e8.jpg' %}" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-30-4e642a1f9b.jpg' %}">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-28-eeb5fcaa98.jpg' %}">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-26-dadd3d80e8.jpg' %}">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-30-4e642a1f9b.jpg' %}"  onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-28-eeb5fcaa98.jpg' %}"  onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="{% static 'shop/images/shop/product/14--photo_2017-12-31_12-39-26-dadd3d80e8.jpg' %}"  onclick="currentSlide(3)">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <h1>پک هدیه چکامه</h1>
+        <p> دسته بندی: <a href="" id="sorting">پک هدیه</a></p>
+        <br>
+        <img src="{% static 'shop/images/shop/product/14-icons.jpg' %}" alt="">
+        <br>
+        <p>قیمت :<strong> ۳۴,۴۳۶,۰۰۰ ریال</strong></p>
+        <a href="" class="add-btn">
+            <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+            <p>افزودن به سبد خرید</p>
+        </a>
+    </div>
+    <br><br><br>
+    <div class="product-detail">
+        <div class="head-links">
+            <a href="#sec1"><i class="fa fa-info-circle"></i> درباره محصول</a>
+            <a href="#sec2"><i class="fa fa-info-circle"></i> ویژگی ها</a>
+            <a href="#sec3"><i class="fa fa-info-circle"></i> ویژگی های فنی</a>
+            <a href="#sec4"><i class="fa fa-info-circle"></i>نظرات مشتریان</a>
+        </div>
+        <div id="sec1" class="product-sections">
+            <strong class="border">درباره محصول</strong>
+            <br>
+            <div dir="rtl">
+                <strong>پک هدیه چکامه حاوی:</strong>
+                <br>
+                ۱۶ گرم زعفران رشته ای درجه یک(نگین)<br>
+                وزن محصول: ۱۳۱۱ گرم<br>
+                ابعاد:۳۷,۵*۱۴*۷.۵<br>
+                <strong>پک هدیه چکامه بهرامن</strong> یکی از محصولات ارزشمند این مجموعه است و از هر نظر یک محصول بی&zwnj;نظیر محسوب می&zwnj;شود. این پک حاوی ۱۶ گرم زعفران رشته ای درجه یک(نگین) است که داخل دو ظرف شفاف ۸ گرمی بسته بندی شده است. <a href="https://bahraman.com/shop/"><strong>فروشگاه زعفران بهرامن</strong></a> یک هاون و دسته از جنس برنج در کنار زعفران قرار داده که برای پودر کردن زعفران می&zwnj;توان از آن استفاده کرد.<br>
+                همچنین ۱۵ گرم هل سبز تازه و معطر که به صورت جم بسته بندی شده در کنار محتویات این پک قرار دارد. وجود این متعلقات در کنار زعفران بر ارزش <strong>پک هدیه چکامه</strong> افزوده و آن را به یک هدیه ارزشمند تبدیل کرده است. جعبه &zwnj;ی این محصول دارای جنس چوبی است که با روکش مخمل پوشش داده شده است. قسمت رویه&zwnj; ی این جعبه&zwnj; مستطیلی به گونه&zwnj;ای طراحی شده که محتوای داخل جعبه تا حدودی دیده می&zwnj;شود.<br>
+                در تهیه&zwnj;ی <strong>پک کادویی چکامه</strong> از زعفران رشته ای درجه یک(نگین) استفاده شده و نشان مرغوبیت آن ضخامت مناسب کلاله&zwnj;ها و فرخوردگی کمتر است. در این نوع <a href="https://bahraman.com/shop/"><strong>زعفران </strong></a>مقدار کمی از خامه زرد رنگ وجود دارد و بیشترین قسمت آن را رشته&zwnj;های ضخیم قرمز رنگ تشکیل می&zwnj;دهد.<strong> پک هدیه چکامه</strong> علاوه بر جعبه&zwnj;ی مخملی دارای یک جعبه&zwnj;ی سفید رنگ ساده است که محصول داخل آن قرار گرفته و برای مشتری ارسال می&zwnj;شود.
+            </div>
+        </div>
+        <hr><br>
+        <div id="sec2" class="product-section">
+            <strong class="border">ویژگی ها</strong><br>
+            <div dir="rtl" style="text-align: justify; line-height: 250%;">زعفران&nbsp; یکی از گران&zwnj;ترین گیاهان جهان است. زعفران، اولین بار در یونان باستان کشت شد و در فهرست میراث یونسکو قرار دارد.<br>
+            همان&zwnj;طور که از قیمت زعفران فهمیده می&rlm; شود، کشت آن نیاز به صبر و مراقبت دارد. پیازها را باید بین ۱۵ آگوست و ۱۵ سپتامبر به عمق حدود ۱۰ سانتی متر کاشت. در طول سال ۴الی۵ مرتبه نیاز به آبیاری دارد.پیاز ها بین ۱۵ اکتبر و ۱۵ نوامبر گل می دهند.. &nbsp;هر روزگل&lrm;ها&lrm;ی زعفران قبل از طلوع آفتاب جمع آوری می&rlm; شوند. کلاله موجود در وسط گل بخشی است که از آن به عنوان ادویه استفاده می&rlm; شود. کلاله با دقت از گل جدا می &rlm;شود. این دشواری در رشد و برداشت، یکی از دلایل گران بودن زعفران است.</div>
+
+            <h2 dir="rtl" style="text-align: justify;">فواید زعفران&nbsp;</h2>
+
+            <div dir="rtl" style="text-align: justify; line-height: 250%;">زعفران باعث &nbsp;افزایش عملکرد اعصاب و همچنین میل جنسی می&rlm; شود.سطح سروتونین را متعادل می&rlm; کند و به بهبود مشکلات روانی مانند افسردگی و اضطراب کمک می&rlm; کند. همچنین کیفیت خواب و سطح انگیزش را بهبود می بخشد و با تنظیم اشتها به مبارزه با چاقی کمک می&rlm; کند. زعفران همچنین سرشار از امگا ۳ است و به تشکیل ویتامین B۶ کمک می&rlm; کند.<br>
+            &nbsp;همچنین این ماده غذایی با ارزش به لطف ویژگی ضد درد، سرعت رشد تومورها را کاهش می&rlm; دهد و باعث کاهش کلسترول و فشار خون می&rlm; شود.<br>
+            زعفران همچنین سرشار از مواد معدنی مانند منیزیم ، آهن و پتاسیم است.</div>
+
+            <h2 dir="rtl" style="text-align: justify;">زعفران چگونه استفاده می&rlm; شود؟</h2>
+
+            <div dir="rtl" style="text-align: justify; line-height: 250%;">به طور کلی زعفران به عنوان یک چاشنی باعطر و طعم دلنشین،&nbsp; درپخت انواع غذا ها مانند برنج، غذاهای گوشتی، مرغ و ماهی مورد استفاده قرار می&rlm; گیرد. زعفران که به وفور در غذاهای ایرانی استفاده می &rlm;شود، به برخی از غذاهای عثمانی و اسپانیایی نیز اضافه می&rlm; شود. از آنجا که&nbsp; عطر و طعم&nbsp; بی نظیری &nbsp;دارد، کافی است چندین رشته از آن را به ادویه خود اضافه کنید.<br>
+            به خانم ها&lrm;ی باردار مصرف زعفران توصیه نمی شود ، زیرا این امر تهدیدی برای تولد زودرس یا سقط جنین می باشد.<br>
+            زعفران باعث افزایش تعداد گلبول&lrm;ها&lrm;ی سفید بدون تأثیر در سایر سلول &lrm;ها&lrm;ی خون می شود. از نظر تئوری، زعفران می&rlm; تواند ایمنی را بدون افزایش خطر سایر عوارض مربوط به خون افزایش دهد.<br>
+            طبق مطالعات صورت گرفته، عصاره زعفران در سلول های ریه، کبد، پستان، لوزالمعده، کولورکتال، پوست، پروستات، تخمدان و دهانه رحم اثرات ضدسرطانی نشان داده اند.<br>
+            محافظت از مغز:<br>
+            در مطالعات متعدد ، دانشمندان پتانسیل زعفران برای بهبود سلامت مغز را مورد بررسی قرار دادند که به نتایج زیر دست یافتند.<br>
+            کاهش التهاب در مغز<br>
+            تنظیم سطح انتقال دهنده &lrm;ها&lrm;ی عصبی<br>
+            فعالیت آنتی اکسیدانی که باعث کاهش آسیب به مغز می&rlm; شود<br>
+            محافظت از مغز در برابر آسیب<br>
+            &nbsp;</div>
+        </div>
+        <hr><br><br>
+        <div id="sec3" class="product-section">
+            <strong class="border">مشخصات فنی</strong>
+            <br>
+            <div class="title">بسته&zwnj;بندی </div>
+            <div class="val">پک هدیه</div>
+        </div><br>
+        <hr><br>
+        <div id="sec4" class="product-section">
+            <strong class="border">نظرات مشتریان</strong><br>
+            <!-- <div class="commnets">
+                <div class="commnet">
+                    <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span>
+                  </div>
+
+                  <div class="commnet darker">
+                    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+                    <p>Hey! I'm fine. Thanks for asking!</p>
+                    <span class="time-left">11:01</span>
+                  </div>
+
+                  <div class="commnet">
+                    <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+                    <p>Sweet! So, what do you wanna do today?</p>
+                    <span class="time-right">11:02</span>
+                  </div>
+
+                  <div class="commnet darker">
+                    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+                    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                    <span class="time-left">11:05</span>
+                  </div>
+            </div> -->
+        </div>
+        <div class="wr-comment">
+            <div class="textarea">
+                <textarea name="" id="" cols="70" rows="7" placeholder="نظرشما"></textarea>
+            </div>
+            <div class="user-info">
+                <input type="text" name="name" id="name" class="form-control" placeholder="نام">
+                <input type="text" name="email" id="email" class="form-control" placeholder="آدرس ایمیل (ایمیل شما به نمایش در نخواهد آمد)">
+                <input type="text" name="cap" id="cap" autocomplete="off" placeholder="نتیجه 5+1" class="form-control">
+                <input type="hidden" id="pid" value="14"><br>
+                <input type="button" class="btn btn-special btn-block" value="ثبت نظر" id="btn-comment">
+            </div>
+        </div>
+    </div>
+    <div class="jump-cart">
+        <a href="">
+            <p>رفتن به سبد خرید</p>
+        </a>
+    </div>
+    <script src="{% static 'shop/js/product-1.js' %}"></script>
+{% endblock %}

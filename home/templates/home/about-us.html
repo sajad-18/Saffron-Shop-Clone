@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'home/images/home/favicon (2).png' %}">
+    <link rel="stylesheet" href="{% static 'home/css/about-us.css' %}">
+    <title>
+		درباره بهرامن - 
+		زعفران بهرامن
+    </title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
+
+    <div class="nav">
+        <div class="nav nav-logo"><img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}"></div>
+        <div class="nav nav-content">
+            <ul class="menu">
+                <li class="menu item"><a href="{% url 'home:home' %}">خانه</a></li>
+                <li class="menu line">|</li>
+                <li class="menu item"><a href="{% url 'home:about_us' %}">درباره ما</a></li>
+                <li class="menu line">|</li>
+                <li class="dropdown">
+                    <a href="{% url 'shop:products' %}" class="dropbtn">محصولات</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a  target=""  href="">زعفران</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">شیرینی جات</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">چاشنی غذا</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">نوشیدنی</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">خشکبار</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">پک هدیه</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">سبزی جات</a>
+                        </li>
+
+                        <li>
+                            <a  target=""  href="">پودریجات</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu line">|</li>
+                <li class="menu item"><a href="{% url 'shop:shop' %}">فروشگاه</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="_title">درباره بهرامن</h1>
+        </div>
+        <div class="_arc">
+            <img src="{% static 'home/images/about/white-curved.svg' %}" alt="Arc header">
+        </div>
+    </header>
+
+    <section id="page-aboutus">
+        <div class="aboutus-intro">
+            <div class="row">
+                <div class="about-text">
+                    شرکت زعفران بهرامن در سال 1349 با نام عباس عباس زاده با هدف نوآوری در زمینه تولید و بسته بندی زعفران شروع به کار نمود و با گذشت زمان و پیشرفت جامعه و تکنولوژی در سال 1373 به زعفران بهرامن تغییر نام یافت. بهرامن از دیرباز میکوشد تا با بهره گیری از دانش روز و تجارب بزرگانِ خود، همواره برترین محصولات را به مردمان جهان عرضه نماید. محصولاتی که کیفیت، تخصص، و مهر، ریشه ی مشترک تمامیِ آن هاست، در خاکی که حمایت مشتریان که سرمایه ی اصلی بهرامن است می&zwnj;روید
+                </div>
+            </div>
+        </div>
+        <div class="aboutus-timeline">
+            <div class="_flower">
+                <img src="{% static 'home/images/about/aboutus-saff.png' %}" alt="Saffron bahraman">
+            </div>
+            <div class="_heart"></div>
+            <div class="_dashed"></div>
+            <div class="timeline">
+                <div class="_timeline-wrapper">
+                    <div class="_row">
+                        <h3 class="_timeline-title">هدفهای راه بردی (استراتژی) بهرامن</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    بهره گیری از پیشرفته ترین فن آوری در تولید صنعتی  و بسته بندی محصول، رسیدن به بالاترین کیفیت تولید، عرضه مرغوب ترین تولیدات کشاورزی، بدست آوردن  استانداردهای ملی وجهانی،  تنوع در وزن، زیبایی در طراحی محصولات همچنین در نظر داشتن بالاترین حق برای مصرف کنند گان عزیز؛ راهی است که هرگز پایان ندارد و ما  تا رسیدن به بالاترین قله های کمال در کنار شما هستیم .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman1.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_row">
+                        <h3 class="_timeline-title">تولید محصولات با پایه  رغفران</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    زعفران  در بسته بندی ها و وزن های متفاوت  از کوچک  ترین بسته برای  مصرف خانگی تا بسته بندی های نیم کیلویی برای مصارف صنعتی و تجاری همچنین تولید فراوری شده زعفران برای مصارف خانگی وصنعتی تنوع در تولید خشکبار  وانواع آجیل،   تولید نبات در بسته های یک نفره  و کیلویی  و متناسب با سفارش مشتری تولید انواع  ادویه های در  بسته های زیبا و راحت در کاربرد که همه و همه ی این محصولات با  بهترین کیفیت و مرغوب ترین محصول با سیستم های دقیق  اندازه گیری وزن و توسط افراد آموزش دیده و مجرب تولید می گردد .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman2.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_row">
+                        <h3 class="_timeline-title">واحد کنترل کیفیت ( آزمایشگاه )</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    شرکت زعفران بهرامن یکی از بزرگترین تولیدکنندگان صنعت زعفران در کشور و یکی از سهامداران بزرگ بازار داخلی و خارجی در تهیه زعفران می باشد، زعفران بهرامن این موفقیت صنعتی و تجاری را فقط با یاری خداوند و تلاش مدیران و پرسنل مجرب و حمایت مشتریان گرامی بدست آورده است. فعاليت در چنين سطحي مستلزم وجود سيستمي با نظارت دقيق در مراحل انجام كار بوده كه يكي از مهمترين اركان آن سيستم كنترل كيفيت شناور می باشد و تمامی محصولات تولیدی را از بدو ورود مواد اولیه تا زمان عرضه به بازار مصرف مورد ارزیابی و آزمایش متعدد قرار می دهد .این مهم باعث گردیده است تا ما با اطمینان کامل و تضمين كيفيت، محصولات خود را در سبد كالاي مصرف كنندگان محترم قرار دهیم .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman3.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_row">
+                        <h3 class="_timeline-title">بخش صادرات بهرامن</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    در این کارخانه فرآوری، بسته بندی و صادرات انواع زعفران براساس استانداردهای ملی و بین المللی انجام می گیرد. و هدف ما داشتن بزرگ ترین سهم در بازارهای جهان و برتری بررقیبان خارجی در عرصه فروش بین الملی زعفران است.
+بخش صادرات  بین اللمل ما  در حوزه های زیر مشغول فعالیت می باشد و افق های گسترده تر را در برنامه کاری خود برای سال های آتی در نظر گرفته ایم .
+در حوزه خلیج فارس به کشورهای کویت، قطر، عمان، بحرین، امارات و عربستان
+در بخش آسیایی ترکیه، ویتنام، هنگ کنگ ، اندونزی و چین
+در بخش اروپایی به کشورهای آلمان، اسپانیا، بلژیک، سوئد،
+در بخش آمریکا به کانادا، وایالات متحده آمریکا
+در بخش اقیانوسیه به استرالیا،
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman4.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_row">
+                        <h3 class="_timeline-title">استانداردها</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    بهرامن علاوه بر استاندارد ها و تاییدیه های ملی، تاییدیه های بین المللی را نیز دارا میباشد، در سال های 1377، 1378 به مراتب نشان استاندارد، مهر استاندارد از اداره استاندارد را دریافت نموده است. در سال 1379 موفق به کسب گواهی نامه های بین المللی HACCP ، ISO9002 گردید.
+در سال های 1386 و 1399 به ترتیب ISO22000 و ISO17025 را کسب نمود.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman5.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_row">
+                        <h3 class="_timeline-title">افتخارات</h3>
+                        <div class="_timeline-left">
+                            <div class="_timeline-box">
+                                <div class="_timeline-text">
+                                    افتخاراتی که در این نیم قرن با تلاش بی وقفه به همراه کیفیت بالا ورضایت مندی شما عزیزان بدست آورده ایم از یک طرف گواه صداقت در گفتار و عمل ما و از طرفی  باعث مباهات و سربلندی ما را دربین سایر  تولید کنندگان می باشد. این افتخارات ملی را تقدیم شما همراهان گرامی می نماییم و تا رسیدن به بالاترین قله های موفقیت و کیفیت در کنار شما می مانیم همچنان که شما در کنار ما هستید.
+1382، دریافت کننده واحد نمونه استاندارد از اداره کل استاندارد
+1384، دریافت کننده عنوان واحد صادرکننده نمونه از سازمان صنعت، معدن و تجارت
+1386، دریافت کننده عنوان واحد نمونه استاندارد از اداره کل استاندارد و واحد نمونه بهداشت از وزارت محترم بهداشت
+1387، دریافت کننده عنوان واحد نمونه استاندارد از اداره کل استاندارد
+1388، دریافت کننده عنوان واحد نمونه استاندارد از اداره کل استاندارد
+1389، دریافت کننده واحد نمونه بهداشت از وزارت محترم بهداشت
+در سال  1390 برگزیده  شده به عنوان واحد نمونه رعایت حقوق مصرف کنندگان،
+درسال 1391 برگزیده  شده واحد الف از سازمان نظام پزشکی
+در سال 1394 برگزیده  شده واحد نمونه بهداشت از وزارت بهداشت
+در سالهای 1395 ، 1396 ،1397، 1398،   1399  برگزیده  شده در پنج دوره پی در پی در جشنواره ملی برند محبوب از سوی مصرف کنند گان بزرگوار هم وطن به عنوان برند محبوب زعفران ایرانی
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_timeline-right">
+                            <div class="_timeline-box">
+                                <img src="{% static 'home/images/about/bahraman6.jpg' %}" class="_timeline-image">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="_bg">
+            <img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}" alt="" class="_logo">
+            <img src="{% static 'home/images/home/farm.jpg' %}" alt="" class="_image">
+        </div>
+        <div class="footer-detail">
+            <div class="row">
+                <div class="con">
+                    <div class="_contact">
+                        <h1 class="_label">ارتباط با ما</h1>
+                        <div class="_content">
+                            <b>آدرس:</b> ایران - خراسان رضوی - مشهد - خیابان امام رضا(ع) - نبش امام رضا 8 <br>
+                            <b>تلفن:</b> 38541568-051  و  35413621-051 &nbsp;
+                            <b>فکس:</b> 35413124-051
+                        </div>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="_social">
+                        <h5 class="_label">دنبال کنید</h5>
+                        <div class="_content">
+                            <img src="{% static 'home/images/home/social.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0480897016664!2d51.34124725233409!3d35.69931290219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1739609876323!5m2!1sen!2s"
+                    width="400"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <span class="_text">
+            © All rights reserved for <a href="http://bahraman.com" style="color: #d70000;">Bahraman</a> 2024
+        </span>
+    </section>
+
+    <script src="js/about-us.js"></script>
+    <script>// Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>

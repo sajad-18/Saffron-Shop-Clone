@@ -1,0 +1,11 @@
+{% if messages %}
+    {% for msg in messages %}
+        <div id="alert" class="alert alert-{{ msg.tags }}">
+            <div class="message">
+                <h4>message</h4>
+                <small>{{ msg }}</small>
+            </div>
+            <span class="close" onclick="closenModal()">&times;</span>
+        </div>
+    {% endfor %}
+{% endif %}

@@ -3,20 +3,9 @@
         <li><a href="{% url 'shop:shop' %}" class="first active">صفحه اصلی</a></li>
         <li class="dropdown"><a href="{% url 'shop:products' %}" class="dropbtn">محصولات</a>
             <div class="dropdown-content">
-                <a href="">پک هدیه</a>
-                <a href="">زعفران</a>
-                <a href="">پودر زعفران</a>
-                <a href="">هل</a>
-                <a href="">اسپری زعفران</a>
-                <a href="">شربت زعفرانی</a>
-                <a href="">کافی میکس و ماسالای زعفرانی</a>
-                <a href="">چای و دمنوش</a>
-                <a href="">نبات و آبنبات</a>
-                <a href="">ادویه</a>
-                <a href="">زرشک</a>
-                <a href="">خشکبار</a>
-                <a href="">سایر محصولات</a>
-                <a href="">سبزیجات</a>
+                {% for product in products %}
+                    <a href="{% url 'shop:product_detail' product.slug %}">{{ product.name }}</a>
+                {% endfor %}
             </div>
         </li>
         <li><a href="" id="cart-menu" class="">سبد خرید : <span id="cart-2" class="pe">0</span></a></li>

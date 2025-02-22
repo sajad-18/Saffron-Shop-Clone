@@ -40,6 +40,19 @@
             </div>
         </div>
             <div class="products">
+                {% for product in products %}
+                     <div class="cart box">
+                        <a href="{{ product.get_absolute_url }}">
+                            <img src="{{ product.image.url }}" alt="پک هدیه">
+                            <p>{{ product.name }}</p>
+                        </a>
+                        <p class="pr"> {{ product.price }} ریال</p>
+                        <a href="" class="add-btn">
+                            <p>افزودن به سبد خرید</p>
+                            <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+                        </a>
+                    </div>
+                {% endfor %}
                 <div class="cart box">
                     <a href="1/">
                         <img src="{% static 'shop/images/shop/14-cover-چکامه.jpg_1705520292' %}" alt="پک هدیه">

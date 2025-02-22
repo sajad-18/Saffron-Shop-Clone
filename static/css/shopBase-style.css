@@ -232,7 +232,7 @@ body {
 }
 
 .container .slides{
-    background-image: url(../images/shop/slider-back.jpg);
+    background-image: url(../images/slider-back.jpg);
     background-repeat: repeat-x;
     margin-top: 80px;
     width: 100%;

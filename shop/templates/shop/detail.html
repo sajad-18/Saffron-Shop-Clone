@@ -1,0 +1,126 @@
+{% extends 'shop-base.html' %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'shop/css/product-1.css' %}">{% endblock %}
+{% block title %}{{ product.name }}{% endblock %}
+{% block content %}
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
+    <div class="images-show">
+        <div class="cover-image">
+            <img src="{{ product.image.url }}" alt="">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="{{ product.image2.url }}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="{{ product.image3.url }}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="{{ product.image4.url }}" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="{{ product.image2.url }}">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="{{ product.image3.url }}">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="{{ product.image4.url }}">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="{{ product.image2.url }}"  onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="{{ product.image3.url }}"  onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="{{ product.image4.url }}"  onclick="currentSlide(3)">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="detail clearfix">
+        <h1>{{ product.name }}</h1>
+        <p> دسته بندی: <a href="" id="sorting">{{ product.category }}</a></p>
+        <br>
+        <img src="{{ product.image2.url }}" alt="">
+        <br>
+        <p>قیمت :<strong> {{ product.price }} ریال</strong></p>
+        <a href="" class="add-btn">
+            <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
+            <p>افزودن به سبد خرید</p>
+        </a>
+    </div>
+    <br><br><br>
+    <div class="product-detail">
+        <div class="head-links">
+            <a href="#sec1"><i class="fa fa-info-circle"></i> درباره محصول</a>
+            <a href="#sec2"><i class="fa fa-info-circle"></i> ویژگی ها</a>
+            <a href="#sec3"><i class="fa fa-info-circle"></i> ویژگی های فنی</a>
+            <a href="#sec4"><i class="fa fa-info-circle"></i>نظرات مشتریان</a>
+        </div>
+        <div id="sec1" class="product-sections">
+            <strong class="border">درباره محصول</strong>
+            <br>
+            <div dir="rtl">{{ product.description|safe }}</div>
+        </div>
+        <hr><br>
+        <div id="sec2" class="product-section">
+            <strong class="border">ویژگی ها</strong><br>
+            <div dir="rtl" style="text-align: justify; line-height: 250%;">
+                {{ product.feature|safe }}
+            </div>
+        </div>
+        <hr><br><br>
+        <div id="sec3" class="product-section">
+            <strong class="border">مشخصات فنی</strong>
+            <br>
+            <div class="title">بسته&zwnj;بندی </div>
+            <div class="val">{{ product.category }}</div>
+        </div><br>
+        <hr><br>
+        <div id="sec4" class="product-section">
+            <strong class="border">نظرات مشتریان</strong><br>
+        </div>
+        <div class="wr-comment clearfix">
+            <div class="textarea">
+                <textarea name="" id="" cols="70" rows="7" placeholder="نظرشما"></textarea>
+            </div>
+            <div class="user-info">
+                <input type="text" name="name" id="name" class="form-control" placeholder="نام">
+                <input type="text" name="email" id="email" class="form-control" placeholder="آدرس ایمیل (ایمیل شما به نمایش در نخواهد آمد)">
+                <input type="text" name="cap" id="cap" autocomplete="off" placeholder="نتیجه 5+1" class="form-control">
+                <input type="hidden" id="pid" value="14"><br>
+                <input type="button" class="btn btn-special btn-block" value="ثبت نظر" id="btn-comment">
+            </div>
+        </div>
+    </div>
+    <div class="jump-cart">
+        <a href="">
+            <p>رفتن به سبد خرید</p>
+        </a>
+    </div>
+    <script src="{% static 'shop/js/product-1.js' %}"></script>
+{% endblock %}

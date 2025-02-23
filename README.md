@@ -11,12 +11,12 @@ This project is a clone of the Bahraman Saffron website, developed to enhance fr
 - Product detail page with JavaScript features such as image zoom and tabbed product details
 - User authentication (registration & login)
 - Admin panel for adding products, featuring CKEditor for rich text descriptions
+- Shopping cart and checkout system
 
 ### 📌 Future Enhancements:
 - Improve UI/UX for better responsiveness
 - Implement user reviews & ratings for products
 - Enhance search functionality with AJAX-based filtering
-- Add a shopping cart and checkout system
 
 ---
 
@@ -24,12 +24,12 @@ This project is a clone of the Bahraman Saffron website, developed to enhance fr
 
 Clone the repository:
 ```sh
-git clone https://github.com/sajad-18/bahraman.git
+git clone https://github.com/sajad-18/Saffron-Shop-Clone.git
 ```
 
 Navigate to the project directory:
 ```sh
-cd bahraman
+cd Saffron-Shop-Clone
 ```
 
 Install dependencies:
@@ -62,7 +62,7 @@ Now, open `http://127.0.0.1:8000/` to access the project. 🚀
 
 ## 📝 Developer
 👤 **Sajjad**  
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
+📧 Email: [your-email@example.com](mailto:your-email@example.com)  
 📌 GitHub: [github.com/sajad-18](https://github.com/sajad-18)
 
 ---
@@ -83,11 +83,12 @@ This project is licensed under the MIT License. Feel free to use and modify it.
 - صفحه جزئیات محصول با امکانات جاوااسکریپتی مثل بزرگنمایی تصاویر و تب‌های توضیحات
 - ثبت‌نام و ورود کاربران
 - پنل ادمین برای افزودن محصولات با ویرایشگر CKEditor
+- سیستم سبد خرید و تسویه‌حساب
 
 ### 🚀 نصب و راه‌اندازی:
 ۱. کلون کردن پروژه:
 ```sh
-git clone https://github.com/sajad-18/bahraman.git
+git clone https://github.com/sajad-18/Saffron-Shop-Clone.git
 ```
 ۲. نصب وابستگی‌ها:
 ```sh

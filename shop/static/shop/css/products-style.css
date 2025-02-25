@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .container2{
     width: 85%;
     margin: 0 auto;
@@ -21,15 +26,19 @@
     position: relative;
 }
 
-.container2 .pr-filter div{
+.container2 .pr-filter form{
     position: absolute;
-    left: 10%;
+    left: 15%;
 }
 
 input[type=radio], input[type=checkbox] {
     position: relative;
     top: 5px;
     margin-left: 5px;
+}
+
+.pr-filter label{
+    margin-left: 15px;
 }
 
 label {
@@ -63,16 +72,19 @@ label {
 
 .container2 .filter .filtering{
     height: 70vh;
-    padding: 5px 10px 5px 0px;
+    padding: 5px 10px 5px 0;
     border-radius: 2px;
     background: #f9f9f9;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 1px solid #eee;
     direction: rtl;
+    display: flex;
+    flex-direction: column;
 }
 
-.container2 .filter .filtering div{
-    padding: 8px 0; 
+.container2 .filter .filtering a{
+    padding: 8px 0;
+    margin-bottom: 10px;
 }
 
 .container2 .filter .filtering label{

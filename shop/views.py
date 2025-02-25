@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import View
-from .models import Products
+from .models import Products, Category
 
 
 class ShopView(View):
@@ -9,14 +9,21 @@ class ShopView(View):
 
 
 class ProductsView(View):
-    def get(self, request):
+    def get(self, request, category_slug=None):
         products = Products.objects.filter(available=True)
-        return render(request, 'shop/products.html', {'products': products})
+        categories = Category.objects.all()
+        if category_slug:
+            category = Category.objects.get(slug=category_slug)
+            products = products.filter(category=category)
+        sort_option = request.GET.get('sort', 'default')
+        if sort_option == "low-to-high":
+            products = products.order_by('-price')
+        elif sort_option == "high-to-low":
+            products = products.order_by('price')
+        elif sort_option == "newest":
+            products = products.order_by('created')
 
-
-class ProductView(View):
-    def get(self, request):
-        return render(request, 'shop/product-1.html')
+        return render(request, 'shop/products.html', {'products': products, 'categories': categories})
 
 
 class ProductsDetailView(View):

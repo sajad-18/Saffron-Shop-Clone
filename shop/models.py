@@ -15,6 +15,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('shop:category-filter', args=[self.slug, ])
+
 
 class Products(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='products')

@@ -62,37 +62,33 @@
     </div>
     
     <div class="container">
-        <div>
+
             <div class="swiper">
-
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="{% static 'home/images/home/ax04.jpg' %}">
-                <div class="hed-slide-text">
-                    <p class="hed-slide-text-hed">بهرامن، حال خوب من</p>
-                    <p class="hed-slide-text-dis">حال خوب سرزمینم...</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'home/images/home/ax04.jpg' %}">
+                        <div class="hed-slide-text">
+                            <p class="hed-slide-text-hed">بهرامن، حال خوب من</p>
+                            <p class="hed-slide-text-dis">حال خوب سرزمینم...</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'home/images/home/SLID2.jpg' %}">
+                        <div class="hed-slide-text">
+                            <p class="hed-slide-text-hed">ریشه در تاریخ...</p>
+                            <p class="hed-slide-text-dis">بیش از نیم قرن در کنارهم</p>
+                            <a href="{% url 'home:about_us' %}" class="btn-learnmore">بیشتر بخوانید</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-slide">
-                <img src="{% static 'home/images/home/SLID2.jpg' %}">
-                <div class="hed-slide-text">
-                    <p class="hed-slide-text-hed">ریشه در تاریخ...</p>
-                    <p class="hed-slide-text-dis">بیش از نیم قرن در کنارهم</p>
-                    <a href="{% url 'home:about_us' %}" class="btn-learnmore">بیشتر بخوانید</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        </div>
             <div id="hed-saf-pic">
-            <img src="{% static 'home/images/home/header-flower.png' %}">
-        </div>
-        </div>
+                <img src="{% static 'home/images/home/header-flower.png' %}">
+            </div>
+
 
     </div>
 
@@ -363,9 +359,7 @@
                 </div>
             </div>
 
-            <div class="products-head">
-                <h1>محصولات</h1>
-            </div>
+            
             <div class="products">
                 <div class="background">
                     <img src="{% static 'home/images/home/products-curve.svg' %}" alt="gerd">
@@ -410,7 +404,7 @@
                         <h1 class="_label">ارتباط با ما</h1>
                         <div class="_content">
                             <b>آدرس:</b> ایران - خراسان رضوی - مشهد - خیابان امام رضا(ع) - نبش امام رضا 8 <br>
-                            <b>تلفن:</b> 38541568-051  و  35413621-051 &nbsp; 
+                            <b>تلفن:</b> 38541568-051  و  35413621-051 &nbsp;
                             <b>فکس:</b> 35413124-051
                         </div>
                     </div>
@@ -424,7 +418,15 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0480897016664!2d51.34124725233409!3d35.69931290219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1739609876323!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0480897016664!2d51.34124725233409!3d35.69931290219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1739609876323!5m2!1sen!2s"
+                    width="400"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
         </div>
     </footer>
 

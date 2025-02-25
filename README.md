@@ -24,12 +24,12 @@ This project is a clone of the Bahraman Saffron website, developed to enhance fr
 
 Clone the repository:
 ```sh
-git clone https://github.com/sajad-18/Saffron-Shop-Clone.git
+git clone https://github.com/sajad-18/bahraman.git
 ```
 
 Navigate to the project directory:
 ```sh
-cd Saffron-Shop-Clone
+cd bahraman
 ```
 
 Install dependencies:
@@ -56,7 +56,7 @@ Now, open `http://127.0.0.1:8000/` to access the project. 🚀
 - **JavaScript** (Frontend interactivity)
 - **Bootstrap** (Styling and layout)
 - **CKEditor** (For rich text product descriptions)
-- **SQLite** (Default database, can be switched to PostgreSQL or MySQL)
+- **PostgreSQL** (Database management system)
 
 ---
 
@@ -88,7 +88,7 @@ This project is licensed under the MIT License. Feel free to use and modify it.
 ### 🚀 نصب و راه‌اندازی:
 ۱. کلون کردن پروژه:
 ```sh
-git clone https://github.com/sajad-18/Saffron-Shop-Clone.git
+git clone https://github.com/sajad-18/bahraman.git
 ```
 ۲. نصب وابستگی‌ها:
 ```sh
@@ -104,4 +104,3 @@ python manage.py runserver
 ```
 
 اکنون می‌توانید پروژه را در `http://127.0.0.1:8000/` بررسی کنید. 🚀
-

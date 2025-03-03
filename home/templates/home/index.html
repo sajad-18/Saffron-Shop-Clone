@@ -1,68 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    {% load static %}
-    <link rel="icon" type="image/x-icon" href="{% static 'home/images/home/favicon (2).png' %}">
-    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
-    <title>زعفران بهرامن</title>
-</head>
-<body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrowup"></i></button>
-    <div class="nav">
-        <div class="nav nav-logo"><img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}"></div>
-        <div class="nav nav-content">
-            <ul class="menu">
-                <li class="menu item"><a href="{% url 'home:home' %}">خانه</a></li>
-                <li class="menu line">|</li>
-                <li class="menu item"><a href="{% url 'home:about_us' %}">درباره ما</a></li>
-                <li class="menu line">|</li>
-                <li class="dropdown">
-                    <a href="{% url 'shop:products' %}" class="dropbtn">محصولات</a>
-                    <ul class="dropdown-content">
-                        <li>
-                            <a  target=""  href="">زعفران</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">شیرینی جات</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">چاشنی غذا</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">نوشیدنی</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">خشکبار</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">پک هدیه</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">سبزی جات</a>
-                        </li>
-                    
-                        <li>
-                            <a  target=""  href="">پودریجات</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu line">|</li>
-                <li class="menu item"><a href="{% url 'shop:shop' %}">فروشگاه</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="container">
+{% extends 'base.html' %}
+{% load static %}
 
+{% block link %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+{% endblock %}
+{% block title %}زعفران بهرامن{% endblock %}
+{% block content %}
+    <div class="container">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -392,52 +337,8 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <div class="_bg">
-            <img src="{% static 'home/images/home/logo-fa.png_v=1.0.8' %}" alt="" class="_logo">
-            <img src="{% static 'home/images/home/farm.jpg' %}" alt="" class="_image">
-        </div>
-        <div class="footer-detail">
-            <div class="row">
-                <div class="con">
-                    <div class="_contact">
-                        <h1 class="_label">ارتباط با ما</h1>
-                        <div class="_content">
-                            <b>آدرس:</b> ایران - خراسان رضوی - مشهد - خیابان امام رضا(ع) - نبش امام رضا 8 <br>
-                            <b>تلفن:</b> 38541568-051  و  35413621-051 &nbsp;
-                            <b>فکس:</b> 35413124-051
-                        </div>
-                    </div>
-                </div>
-                <div class="con">
-                    <div class="_social">
-                        <h5 class="_label">دنبال کنید</h5>
-                        <div class="_content">
-                            <img src="{% static 'home/images/home/social.png' %}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0480897016664!2d51.34124725233409!3d35.69931290219405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1739609876323!5m2!1sen!2s"
-                    width="400"
-                    height="300"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-        </div>
-    </footer>
-
-    <section id="copyright">
-        <span class="_text">
-            © All rights reserved for <a href="http://bahraman.com" style="color: #d70000;">Bahraman</a> 2024
-        </span>
-    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{% static 'home/js/javascript.js' %}"></script>
-</body>
-</html>
+{% endblock %}

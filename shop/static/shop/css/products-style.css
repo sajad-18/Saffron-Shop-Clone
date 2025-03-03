@@ -97,6 +97,7 @@ label {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
+    direction: rtl;
 }
 
 .container2 .products .cart{

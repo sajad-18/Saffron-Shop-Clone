@@ -52,11 +52,13 @@
             </div>
         </div>
     </div>
-    <div class="jump-cart">
-        <a href="">
-            <p>رفتن به سبد خرید</p>
-        </a>
-    </div>
+    {% if cart %}
+        <div class="jump-cart">
+            <a href="{% url 'orders:cart' %}">
+                <p>رفتن به سبد خرید</p>
+            </a>
+        </div>
+    {% endif %}
     <script>
         document.querySelectorAll('input[name="sort"]').forEach(radio => {
             radio.addEventListener('change', function() {

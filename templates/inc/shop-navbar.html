@@ -8,7 +8,7 @@
                 {% endfor %}
             </div>
         </li>
-        <li><a href="" id="cart-menu" class="">سبد خرید : <span id="cart-2" class="pe">0</span></a></li>
+        <li><a href="{% url 'orders:cart' %}" id="cart-menu" class="">سبد خرید : <span id="cart-2" class="pe">{{ cart|length }}</span></a></li>
         {% if request.user.is_authenticated %}
             <li><a href="{% url 'accounts:logout' %}" class="">خروج</a></li>
         {% else %}

@@ -1,0 +1,34 @@
+{% extends 'shop-base.html' %}
+{% load static %}
+
+{% block title %} سبد خرید {% endblock %}
+{% block link %}<link rel="stylesheet" href="{% static 'orders/css/cart.css' %}">{% endblock %}
+
+{% block content %}
+    <div class="cart">
+        <div class="products">
+            {% for item in cart %}
+                <div class="product">
+                <div class="p-image"><img src="{{ item.product.image.url }}" alt=""></div>
+                <div class="p-disc">
+                    <p><a href="{{ item.product.get_absolute_url }}" class="name">{{ item.product }}</a></p>
+                    <p class="tag">{{ item.product.category }}</p>
+                    <div class="counts">
+                        <div class="plus">+</div>
+                        <div class="count">{{ item.quantity }}</div>
+                        <div class="minus">-</div>
+                    </div>
+                </div>
+                <div class="p-price">
+                    <a href="{% url 'orders:cart_remove' item.product.id %}" class="delete"><img src="{% static 'shop/images/shop/delete.png' %}" alt="delete"></a>
+                    <p class="price">{{ item.total_price }} ریال</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="total">
+            <p>جمع : {{ cart.get_total_price }} ریال</p>
+            <button>ثبت سفارش</button>
+        </div>
+    </div>
+{% endblock %}

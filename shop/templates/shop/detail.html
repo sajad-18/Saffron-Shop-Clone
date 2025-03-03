@@ -67,11 +67,14 @@
         <br>
         <img src="{{ product.image2.url }}" alt="">
         <br>
-        <p>قیمت :<strong> {{ product.price }} ریال</strong></p>
-        <a href="" class="add-btn">
-            <img src="{% static 'shop/images/shop/shop-icon.png' %}" class="add-icon">
-            <p>افزودن به سبد خرید</p>
-        </a>
+        <p style="font-size: 20px">قیمت :<strong> {{ product.price }} ریال</strong></p>
+        <br><br>
+        <form action="{% url 'orders:cart_add' product.id %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="add-btn" value="افزودن به سبد خرید">
+        </form>
+        <br><br>
     </div>
     <br><br><br>
     <div class="product-detail">
@@ -117,10 +120,12 @@
             </div>
         </div>
     </div>
-    <div class="jump-cart">
-        <a href="">
-            <p>رفتن به سبد خرید</p>
-        </a>
-    </div>
+    {% if cart %}
+        <div class="jump-cart">
+            <a href="{% url 'orders:cart' %}">
+                <p>رفتن به سبد خرید</p>
+            </a>
+        </div>
+    {% endif %}
     <script src="{% static 'shop/js/product-1.js' %}"></script>
 {% endblock %}

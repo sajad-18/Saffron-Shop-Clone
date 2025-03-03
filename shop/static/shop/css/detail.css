@@ -192,24 +192,16 @@ img.hover-shadow {
     justify-content: center;
     background-color: #b20205;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .detail .add-btn:hover{
     box-shadow: 0 5px 15px #666;
-    transition: all 0.3s;
-}
-.detail .add-btn .add-icon{
-    width: 27px;
-    border-radius: 0;
-    box-shadow: 0 0 0 #666;
-}
-
-.detail .add-btn p{
-    margin-top: 10px;
-    color: white;
-    font-size: smaller;
-    font-weight: 500;
 }
 
 .product-detail{

@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from .models import Products, Category
+from orders.forms import CartAddForm
 
 
 class ShopView(View):
@@ -17,11 +18,11 @@ class ProductsView(View):
             products = products.filter(category=category)
         sort_option = request.GET.get('sort', 'default')
         if sort_option == "low-to-high":
-            products = products.order_by('-price')
-        elif sort_option == "high-to-low":
             products = products.order_by('price')
+        elif sort_option == "high-to-low":
+            products = products.order_by('-price')
         elif sort_option == "newest":
-            products = products.order_by('created')
+            products = products.order_by('-created')
 
         return render(request, 'shop/products.html', {'products': products, 'categories': categories})
 
@@ -29,7 +30,8 @@ class ProductsView(View):
 class ProductsDetailView(View):
     def get(self, request, slug):
         product = get_object_or_404(Products, slug=slug)
-        return render(request, 'shop/detail.html', {'product': product})
+        form = CartAddForm()
+        return render(request, 'shop/detail.html', {'product': product, 'form': form})
 
 
 class ShowProductView(View):

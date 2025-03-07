@@ -6,6 +6,7 @@
 
 {% block content %}
     <div class="cart">
+        {% if cart %}
         <div class="products">
             {% for item in cart %}
                 <div class="product">
@@ -28,7 +29,10 @@
         </div>
         <div class="total">
             <p>جمع : {{ cart.get_total_price }} ریال</p>
-            <button>ثبت سفارش</button>
+            <a href="{% url 'orders:order_create' %}">ثبت سفارش</a>
         </div>
+        {% else %}
+            <p class="danger">سبد خرید شما خالی است!</p>
+        {% endif %}
     </div>
 {% endblock %}

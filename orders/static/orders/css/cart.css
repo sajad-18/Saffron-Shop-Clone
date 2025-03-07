@@ -136,8 +136,7 @@ a{
     font-size: 20px;
 }
 
-.total button{
-    border: none;
+.total a{
     background-color: #32af01;
     color: white;
     width: 100px;
@@ -145,5 +144,19 @@ a{
     padding: 10px;
     border-radius: 10px;
     font-size: 18px;
+    text-align: center;
+}
+
+.danger{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #e84c3d;
+    border: 2px solid #e02f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #e84c3d;
 }
 

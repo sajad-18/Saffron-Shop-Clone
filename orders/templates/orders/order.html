@@ -1,0 +1,33 @@
+{% extends 'shop-base.html' %}
+{% load static %}
+
+{% block title %} ثبت سفارش {% endblock %}
+
+{% block link %}<link rel="stylesheet" href="{% static 'orders/css/cart.css' %}">{% endblock %}
+
+{% block content %}
+    <div class="cart">
+        <div class="products">
+            {% for item in dorder %}
+                <div class="product">
+                    <div class="p-image"><img src="{{ item.product.image.url }}" alt=""></div>
+                    <div class="p-disc">
+                        <p><a href="{{ item.product.get_absolute_url }}" class="name">{{ item.product }}</a></p>
+                        <p class="tag">{{ item.product.category }}</p>
+                        <div class="counts">
+                            <div class="count">{{ item.quantity }}</div>
+                        </div>
+                    </div>
+                    <div class="p-price">
+                        <p class="price">قیمت واحد: {{ item.price }} ریال </p><br><br>
+                        <p class="price">  قیمت کل: {{ item.get_cost }} ریال </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="total">
+            <p>جمع : {{ order.get_total_price }} ریال</p>
+            <a href="">ثبت سفارش</a>
+        </div>
+    </div>
+{% endblock %}
